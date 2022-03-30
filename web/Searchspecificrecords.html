@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+search specific record from the table
+-->
+<html>
+    <head>
+        <title>Search specific record</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .bodypart
+            {
+                background-image: url("image/download_1.jpg");
+                background-repeat: no-repeat;
+                background-size:cover;
+                width: 800px;
+                margin-left:100px;
+                margin-right: 300px;
+             
+            }
+            h1{
+                color: lavender;
+                text-align: center;
+                font-size: 40px;
+                font-style: italic;
+                text-transform: capitalize;
+            }
+            label{
+                color: lightpink;
+                
+                text-align: left;
+                font-size: 40px;
+                font-style: italic;
+                text-transform: capitalize;
+            }
+            input{
+                font-size: 30px;
+            }
+            .submit
+            {
+                color: darkblue;
+                background-color: lightcyan;
+                text-align: center;
+                font-size: 40px;
+                font-style: italic;
+                text-transform: capitalize;
+                
+            }
+        </style>
+    </head>
+    <body class="bodypart">
+        <h1>view the specific student details</h1>
+         <form method ="post" action="Viewspecificrecord">
+            <label>Enter the id:</label><input type="text" name="id"></input>
+            <br><br><br><input class="submit" type="submit" value="Search"></input>
+        </form>
+    </body>
+</html>

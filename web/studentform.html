@@ -1,0 +1,142 @@
+<!--html part for creating student registration form-->
+<html>
+    <head>
+        <title>Students registration form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script >
+            function reg()
+            {
+                alert("registration successfully");
+            }
+        </script>
+        <style>
+            div
+            {
+                border:10px solid #800000;
+                background-color:darkslategrey;
+                margin-left: 200px;
+                margin-right: 400px;
+                width: 500px;
+                padding:30px 30px 30px 30px;
+            }
+            th,td
+            {
+                color:lemonchiffon;
+                text-align:left;
+                font-size:30px;
+                font-style:italic;
+            }
+            input,option,select
+            {
+                background-color:lavender;
+                color:green;
+                text-align:left;
+                font-size:20px;
+                font-style:italic;
+            }
+            #submit
+            {
+                background-color:lightseagreen;
+                color:blue;
+                text-align:center;
+                font-size:20px;
+                font-style:italic;
+            }
+            #sub
+            {
+                text-align:left;
+            }
+            .title
+            {
+                color:lemonchiffon;
+                outline-style:double;
+                font-size:30px;
+                text-align:center;
+                border:5px solid #6495ED;
+                background-color:steelblue;
+            }
+            body{
+                background-image:url("C:\Users\VINOTH\Desktop\amsa\html\bule.jpg");
+            }
+        </style>
+    </head>
+    <center>   
+    <body style="background-color:mediumaquamarine">
+        <h1 class="title">Student Registration Form</h1>
+        <form method="get" action="Studentsreg;" >
+            <div>
+                <table>
+                    <tr>
+                        <th><label>Id:</label></th>
+                        <td><input type="text" name="id" placeholder="enter the id" required></td>
+                    </tr>
+                    <tr>
+                        <th><label>Name:</label></th>
+                        <td><input type="text" name="sname" placeholder="enter the name" required></td>
+                    </tr>
+                    <tr>
+                        <th><label>DOB:</label></th>
+                        <td><input type="date" name="sdob" required></td>
+                    </tr>
+                    <tr>
+                        <th><label>Gender:</label></th>
+                        <td><input type="radio" name="gender" value="male" required><label id="gender">Male</label>
+                        <input type="radio" name="gender" value="female"  required><label id="gender">Female</label></td>
+                    </tr>
+                    <tr>
+                        <th><label>Email:</label></th>
+                        <td><input type="email" name="smail" placeholder="name@address.com" required></td>
+                    </tr>
+                    <tr>
+                        <th><label>Address:</label></th>
+                        <td><input type="text" name="saddress" placeholder="enter the current address" required></td>
+                    </tr>
+                    <tr>
+                        <th><label>School:</label></th>
+                        <td><input type="text" name="sschool" placeholder="enter your school name" required></td>
+                    </tr>
+                    <tr>
+                        <th><label>12th/PUC:</label></th>
+                        <td><input type="number" name="snumber" placeholder="enter your school name" required></td>
+                        <td><label>%</label>
+                    </tr>
+                    <tr>
+                        <th><label>Course:</label></th>
+                        <td>
+                            <select name="select">
+                                <option>BE</option>
+                                <option>BTECH</option>
+                                <option>ME</option>
+                                <option>MTECH</option>
+                                <option>MCA</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label>Department:</label></th>
+                        <td>
+                            <select name="department">
+                                <option>CSE</option>
+                                <option>IT</option>
+                                <option>ECE</option>
+                                <option>EEE</option>
+                                <option>MECH</option>
+                                <option>BIO-TECH</option>
+                                <option>CIVIL</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label>Mobile Number:</label></th>
+                        <td><input type="number" name="mobilenumber" required></td>
+                    </tr>
+                    <tr>
+                        <th id="sub" colspan="3" ><input type="submit" value="Register"  id="submit" onclick="reg();" required></th>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </body>
+    </center>   
+</html>

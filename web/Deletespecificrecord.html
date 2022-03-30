@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+Delete the record in the database
+-->
+<html>
+    <head>
+        <title>delete the specific record</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        .bodypart
+            {
+                background-image: url("image/download2.jpg");
+                background-repeat: no-repeat;
+                background-size:cover;
+                width: 800px;
+                margin-left:100px;
+                margin-right: 300px;
+            }
+            h1{
+                color:lightgoldenrodyellow;
+                text-align: center;
+                font-size: 50px;
+                font-style: italic;
+                text-transform: capitalize;
+            }
+            label{
+                color:lightcyan;
+                text-align: left;
+                font-size: 40px;
+                font-style: italic;
+                text-transform: capitalize;
+            }
+            input{
+                font-size: 30px;
+            }
+            .submit
+            {
+                color: darkblue;
+                background-color: lightcyan;
+                text-align: center;
+                font-size: 40px;
+                font-style: italic;
+                text-transform: capitalize;
+                
+            }
+    </style>
+    </head>
+    <body class="bodypart">
+        
+        <h1>Delete the Specific Record </h1>
+        <form method ="post" action="DeleteSpecificServlet">
+            <label>Enter the id:</label><input type="text" name="id"></input>
+            <br><br><br><input class="submit" type="submit" value="Search"></input>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>update the record</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+           #heading
+           {
+               color:darkred;
+               font-family: serif;
+               font-size: 50px;
+               text-align: center; 
+           }
+           div{
+               text-align: center;
+               background-color: lightcyan;
+                margin-left:100px;
+                margin-right: 300px;
+                width: 800px;
+              
+           }
+           label
+           {
+              margin-top:20px; 
+               color: darkgreen;
+               font-family: serif;
+               font-size: 30px;
+               text-align: left; 
+           }
+           select
+           {
+               font-size: 30px;
+               font-family: serif;
+                color: darkgreen;
+                text-align: center; 
+                background-color:lightgray;
+           }
+           input{
+               font-size: 20px;
+               font-family: serif;
+                color:darkviolet;
+                background-color: lavenderblush;
+           }
+           #submit
+           {
+               color:darkolivegreen;
+               background-color: lightgreen;
+               font-size: 30px;
+               font-family: serif;
+               text-align: center;
+           }
+           body{
+               background-color:lightblue; 
+           }
+        </style>
+    </head>
+    <body>  
+          <h1 id="heading"> Update The Specific Record</h1>
+        <form method="post" action="UpdateStudetail">
+            <div>
+             <label> Enter the Id:</label><input type="text" name="id"></input>
+            <br><br>
+            <select name="updatedetails">
+                <option>name</option>
+                <option>Dob</option>
+                <option>gender</option>
+                <option>email</option>
+                <option>address</option>
+                <option>school</option>
+                <option>number</option>
+                <option>course</option>
+                <option>department</option>
+                <option>mobileno</option>
+            </select>
+            <br><br>
+            <label>Enter the details to update:<input type="text" name="updatefield"></input> </label>
+            <br><br>
+          <input id="submit" type="submit"value="update"></input>
+        </form>
+</div>    
+    </body>
+</html>
